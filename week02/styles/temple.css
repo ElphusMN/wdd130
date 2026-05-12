@@ -27,7 +27,10 @@ p {
 
 img {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 800px;
 }
 
 section {
@@ -39,4 +42,10 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
