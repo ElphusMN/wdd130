@@ -38,13 +38,17 @@ main {
 }
 
 main img {
-  main img {
   width: 100%;
   max-width: 600px;
   height: auto;
+  display: block;
+  margin: 20px auto;
+
   border: 1px solid black;
   padding: 2px;
-  box-shadow: 0 0 30px gray;
+
+  /* ✅ STRONGER SHADOW */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 }
@@ -60,7 +64,10 @@ aside {
 
 aside img {
   width: 100%;
+  max-width: 280px;  /* increase this */
   height: auto;
+  display: block;
+  margin: 10px auto;
 }
 
 /* ✅ FOOTER */
