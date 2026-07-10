@@ -8,7 +8,7 @@ header {
   text-align: center;
 }
 
-/* ✅ NAVIGATION FIXED */
+/* NAVIGATION */
 nav {
   background-color: darkblue;
   padding: 10px;
@@ -31,49 +31,46 @@ nav a {
   text-decoration: none;
 }
 
-/* ✅ PAGE LAYOUT */
+/* PAGE LAYOUT */
 main {
   max-width: 800px;
   margin: 0 auto;
 }
 
 main img {
+  width: 150px;
+  height: auto;
   display: block;
   margin: 20px auto;
-
-  width: 90%;       /* ✅ slightly smaller */
-  max-width: 700px; /* ✅ keeps it controlled */
-  height: auto;
-
   border: 1px solid black;
   padding: 2px;
-
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
+p {
+  padding: 0;
 }
 
-/* ✅ ASIDE */
+/* ASIDE */
 aside {
   width: 300px;
   margin: 20px auto;
   border: 1px solid #aaa;
   padding: 15px;
   background-color: #eee;
-
+  color: #333;
   text-align: center;
 }
 
 aside img {
-  width: 100%;
-  max-width: 320px;  /* increase this */
+  width: 200px;
   height: auto;
   display: block;
   margin: 10px auto;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* ✅ FOOTER */
+/* FOOTER */
 footer {
   text-align: center;
   margin-top: 20px;
