@@ -1,4 +1,6 @@
-.hero {position: relative;}
+.hero {
+  position: relative;
+}
 
 .hero img {
   width: 100%;
@@ -112,6 +114,7 @@
 .grid-item p {
   margin-top: 10px;
 }
+
 .trips-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -138,6 +141,7 @@
 .trip-card p {
   margin-top: 10px;
 }
+
 .trips-table {
   max-width: 800px;
   margin: 40px auto;
@@ -191,4 +195,32 @@
 
 .trips-cta .cta-button:hover {
   background-color: #084298;
+}
+
+/* About Us Page */
+
+.history {
+  padding: 20px;
+  text-align: center;
+}
+
+.adventures {
+  padding: 20px;
+  text-align: center;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+  margin: 0;
+}
+
+.adventure-gallery img {
+  width: 180px;
+  height: auto;
 }
