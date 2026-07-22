@@ -54,6 +54,7 @@ h2 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
+  border-bottom: 3px solid var(--secondary-color);
 }
 
 .hero article {
@@ -272,4 +273,9 @@ h2 {
 .adventure-gallery img {
   width: 180px;
   height: auto;
+}
+
+.adventures figure img {
+  border: 2px solid var(--accent2-color);
+  border-radius: 4px;
 }
