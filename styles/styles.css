@@ -46,9 +46,10 @@ main {
 }
 
 main img {
-  width: 250px;
+  width: 300px;
+  height: auto;
   float: right;
-  margin-left: 1rem;
+  margin-left: 0 0 1rem 1rem;
   border: 1px solid black;
   padding: 2px;
   box-shadow: 0 0 30px gray;
@@ -72,8 +73,11 @@ aside h2 {
 }
 
 aside img {
-  width: 250px;
+  width: 100%;
+  max-width: 280px;
   height: auto;
+  display: block;
+  margin: 10px auto;
 }
 
 footer {
