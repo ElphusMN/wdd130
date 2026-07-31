@@ -3,8 +3,8 @@
   --secondary-color: #f4a261;
   --accent1-color: #264653;
   --accent2-color: #e9c46a;
-  --heading-font: Georgia, serif;
-  --body-font: Arial, Helvetica, sans-serif;
+  --heading-font: 'Playfair Display', Georgia, serif;
+  --body-font: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -31,7 +31,7 @@ h2 {
   color: var(--primary-color);
 }
 
-.socialmedia a {
+.social-media a {
   text-decoration: none;
 }
 
@@ -40,7 +40,7 @@ h2 {
   position: relative;
 }
 
-.hero img {
+.hero > img {
   width: 100%;
   height: auto;
   display: block;
@@ -57,21 +57,52 @@ h2 {
   border-bottom: 3px solid var(--secondary-color);
 }
 
+.hero-nav-bullets {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.hero-nav-bullets span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.hero-nav-bullets span:hover {
+  background-color: #fff;
+}
+
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  max-width: 300px;
-  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 2;
+  max-width: 360px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 12px;
   border-radius: 4px;
 }
 
-.hero article img {
-  float: right;
+.hero article p {
+  flex: 1;
+  min-width: 0;
+}
+
+.article-image {
+  float: none;
   width: 100px;
-  margin-left: 10px;
   border-radius: 4px;
+  flex-shrink: 0;
 }
 
 /* Call to Action */
@@ -261,7 +292,7 @@ header img {
   width: 120px;
 }
 
-nav {
+header nav {
   display: flex;
   justify-content: space-evenly;
 }
@@ -286,15 +317,15 @@ nav {
 }
 
 .adventures {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+  gap: 20px;
   padding: 20px;
 }
 
 .adventures h2 {
-  width: 100%;
+  grid-column: 1 / -1;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -316,12 +347,22 @@ footer {
   padding: 1rem 0;
 }
 
-.socialmedia {
+footer nav {
+  display: flex;
+  gap: 15px;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: var(--accent1-color);
+}
+
+.social-media {
   display: flex;
   gap: 10px;
 }
 
-.socialmedia img {
+.social-media img {
   width: 40px;
   height: auto;
 }
