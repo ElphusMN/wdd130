@@ -3,8 +3,8 @@
   --secondary-color: #f4a261;
   --accent1-color: #264653;
   --accent2-color: #e9c46a;
-  --heading-font: 'Playfair Display', Georgia, serif;
-  --body-font: 'Poppins', Arial, Helvetica, sans-serif;
+  --heading-font: Georgia, serif;
+  --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -31,7 +31,7 @@ h2 {
   color: var(--primary-color);
 }
 
-.social-media a {
+.socialmedia a {
   text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ h2 {
 }
 
 .hero-nav-bullets span:hover {
-  background-color: #fff;
+  background-color: var(--accent2-color);
 }
 
 .hero article {
@@ -85,24 +85,17 @@ h2 {
   left: 20px;
   z-index: 2;
   max-width: 360px;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
   background-color: rgba(255, 255, 255, 0.95);
   padding: 12px;
   border-radius: 4px;
+  overflow: auto;
 }
 
-.hero article p {
-  flex: 1;
-  min-width: 0;
-}
-
-.article-image {
-  float: none;
+.hero article img {
+  float: right;
   width: 100px;
+  margin-left: 10px;
   border-radius: 4px;
-  flex-shrink: 0;
 }
 
 /* Call to Action */
@@ -347,22 +340,12 @@ footer {
   padding: 1rem 0;
 }
 
-footer nav {
-  display: flex;
-  gap: 15px;
-}
-
-footer nav a {
-  text-decoration: none;
-  color: var(--accent1-color);
-}
-
-.social-media {
+.socialmedia {
   display: flex;
   gap: 10px;
 }
 
-.social-media img {
+.socialmedia img {
   width: 40px;
   height: auto;
 }
