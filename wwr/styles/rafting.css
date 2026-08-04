@@ -46,15 +46,12 @@ h2 {
   display: block;
 }
 
-.hero h1 {
+.hero-text {
   position: absolute;
-  top: 20px;
+  top: 70px;
   width: 100%;
-  padding: 16px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
-  border-bottom: 3px solid var(--secondary-color);
 }
 
 .hero-nav-bullets {
