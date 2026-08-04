@@ -48,10 +48,18 @@ h2 {
 
 .hero-text {
   position: absolute;
-  top: 70px;
+  top: 20px;
   width: 100%;
+  padding: 16px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.hero-text h1 {
+  color: #fff;
+  /* was set via .hero h1 before — needs to move here */
 }
 
 .hero-nav-bullets {
