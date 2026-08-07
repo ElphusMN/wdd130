@@ -38,13 +38,25 @@
 
         <section class="contact">
 
+            <!--
+              Using a static map image + external link instead of an embedded Google Maps
+              iframe. The live iframe pulls in Google's full Maps JS app (scripts, fonts,
+              map tiles, UI controls) on every page load, adding 700+ KB and blowing past
+              the project's 500 KB page-weight requirement. A static image + link keeps
+              the page lightweight while still giving visitors a way to get directions.
+            -->
             <div class="map">
-                <iframe
-                  src="https://maps.google.com/maps?q=Kolob%20Canyons%2C%20California&output=embed"
-                  width="400" height="300" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  title="Map to White Water Rafting Company">
-                </iframe>
+                <a href="https://maps.google.com/maps?q=Kolob+Canyons,+California" target="_blank">
+                    <img src="images/map-static.jpg" alt="Map to White Water Rafting Company"
+                      width="400" height="300">
+                </a>
+                <p class="map-note">
+                    <a href="https://maps.google.com/maps?q=Kolob+Canyons,+California"
+                      target="_blank">
+                        Open in Google Maps
+                    </a>
+                    for directions and live traffic.
+                </p>
             </div>
 
             <form class="contact-form" action="#" method="post">
